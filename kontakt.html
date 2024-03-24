@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamnik IT Informacje Kontaktowe</title>
+    <link rel="stylesheet" href="kontakt.css">
+</head>
+<nav class= "navmenu"></nav>
+<div id="sideNav">
+  <ul>
+ <li class="lilogo"> <a href="index.html"><img src="jamnior.png" alt=""></a></li>
+ <li class="limenu"><a href="produkty.html" >PRODUKTY</a></li>
+ <li class="limenu"><a href="usługi.html" >USŁUGI</a></li>
+ <li class="limenu"><a href="kontakt.html" >INFORMACJE KONTAKTOWE</a></li>
+ <li class="limenu"><a href="newsletter.html" >NEWSLETTER</a></li>
+ <li class="limenu" id="onas"><a href="onas.html" >O NAS</a></li>
+</ul>
+</nav>
+</div>
+<div id="menuBtn">
+<img src="hamburger.png" id="menu" >
+</div>
+    <main>
+        <div class="mapa"><iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39722.23067682784!2d17.23051468385599!3d51.5198310046062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47055befc20cfb3d%3A0x2fad6859b2261f59!2sMilicz!5e0!3m2!1spl!2spl!4v1710436963087!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div class="kontakt">
+        <div class="tel">
+            <p>Numer telefonu:</p>
+            <p>+48 123 456 789</p>
+        </div>
+        <div class="email">
+            <p>Adres E-mail:</p>
+            <p>serwis-it-jamnik@gmail.com</p>
+        </div>
+    </div>
+    </main>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+      
+        sideNav.style.right = "-250px"
+      
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src = "hamburger.png"
+            }   
+            else{
+                sideNav.style.right = "-250px";
+                menu.src = "hamburger.png"
+            }
+        }
+      
+        var scroll = new SmoothScroll('a[href*="#"]', {
+          speed: 500,
+            speedAsDuration: true
+        });
+      </script>
+      <footer>
+        <hr>
+        <span style="color: white;">&copy;Jamnik IT 2024</span>
+      </footer>
+    
+</body>
+</html>

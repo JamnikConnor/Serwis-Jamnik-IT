@@ -1,0 +1,209 @@
+body{
+    height: 75vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: top;
+    background: rgb(0, 0, 0);
+    overflow-x: hidden;
+}
+@media screen and (orientation=portrait) {
+   
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    main{
+        height: 90%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        vertical-align: top;
+        background: rgb(0, 0, 0);
+        overflow-x: hidden;
+    }
+    .navmenu{
+        height: 10%;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .limenu a {
+        color: white;
+        text-decoration: none;
+        font-size: 23px;
+        margin-right: 80px;
+
+    }
+    .limenu a:hover{
+       text-shadow: 0px 0px 1px white; 
+    }
+     .lilogo img{
+       height: 50px;
+       width: 75px;
+       margin-right: 90px;     
+}
+    div.grid{
+        display: grid;
+        gap: 20px;
+        width: 80%;
+        height: 95%;
+        grid-template-columns:auto auto auto;
+        justify-content: center;
+       }
+   div.gridelement{
+       background-color: black;
+       height: 160px;
+       width:130px;
+       border: solid;
+       border-color: white;
+       display: flex;
+       flex-direction: column;
+      justify-content: end;
+   }
+   div.opis{
+    width: 100%;
+    height: 25%;
+    border-top: solid;
+    border-color: white;
+    color: white;
+    text-align: center;
+   }
+   img{
+    width: 130px;
+    height: 120px;
+   }
+   #sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: black;
+    z-index: 2; 
+    transition: 0.5s;
+
+}#menuBtn{
+    width: 50px;
+    height: 30px;
+    background: #000000;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+img#menu{
+    width: 50px;
+    height: 50px;
+}
+}
+@media screen and (orientation=landscape) {
+   
+    #sideNav{
+        height: 0px;
+        margin-bottom: 100px;
+        }
+        #menuBtn{
+         display: none;
+        }
+        #onas{
+            display: none;
+        }
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+
+
+    main{
+        height: 90%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navmenu{
+        height: 10%;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .limenu a {
+        color: white;
+        text-decoration: none;
+        font-size: 23px;
+        margin-right: 80px;
+    }
+    .limenu a:hover{
+       text-shadow: 0px 0px 1px white; 
+    }
+    .lilogo img{
+    height: 70px;
+    width: 100px;
+    margin-left: 12px;
+    }
+    div.grid{
+     display: grid;
+     gap: 20px;
+     width: 80%;
+     height: 95%;
+     grid-template-columns:auto auto auto;
+     justify-content: center;
+    }
+div.gridelement{
+    background-color: black;
+    height: 300px;
+    width:250px;
+    border: solid;
+    border-color: white;
+    display: flex;
+    flex-direction: column;
+   justify-content: end;
+}
+div.opis{
+    width: 100%;
+    height: 25%;
+    border-top: solid;
+    border-color: white;
+    color: white;
+    text-align: center;
+   }
+   img{
+    width: 250px;
+    height: 225px;
+   }
+}
