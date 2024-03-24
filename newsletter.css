@@ -185,7 +185,8 @@ body{
         width: 600px;
         height: 200px;
         background-color: black;
-        text-align: center;
+        text-align:center;
+    
         }
         form{
         display: flex;
